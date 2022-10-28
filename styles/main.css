@@ -1,0 +1,164 @@
+:root {
+  --mainTextColor-dark: #fff;
+  --secondaryTextColor-dark: #adb0b1;
+  --mainBorder-color-dark: #2b3031;
+  --mainBgColor-dark: #131415;
+
+  --mainTextColor: var(--mainTextColor-dark);
+  --secondaryTextColor: var(--secondaryTextColor-dark);
+  --mainBorderColor: var(--mainBorder-color-dark);
+  --mainBgColor: var(--mainBgColor-dark);
+}
+
+* {
+  line-height: 1.5em;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  color: var(--mainTextColor);
+}
+
+body {
+  background-color: var(--mainBgColor);
+}
+
+p,
+span,
+li {
+  color: var(--secondaryTextColor);
+  font-size: 1em;
+}
+
+a {
+  text-decoration: dashed;
+  color: blue;
+  font-size: large;
+  font-weight: 800;
+}
+
+li {
+  line-height: 1.9em;
+}
+
+#container--main {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.section--page {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+#wrapper--hero {
+  display: flex;
+  align-items: center;
+  gap: 4em;
+}
+
+#username {
+  font-size: 50px;
+  line-height: 0.5em;
+}
+
+#bio {
+  font-weight: 500;
+}
+
+#profile-pic {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+#email {
+  color: var(--mainTextColor);
+}
+
+#socials--list {
+  display: flex;
+  justify-content: space-between;
+  column-gap: normal;
+  flex-wrap: wrap;
+}
+
+#socials--list a {
+  font-size: 0.9em;
+  color: var(--mainTextColor);
+}
+
+#socials--list a:hover {
+  color: blue;
+  transition: 0.4s;
+}
+#qualifications--list {
+  list-style: circle;
+}
+
+#wrapper--techstack__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  font-size: 0.9em;
+}
+
+.card--techstack {
+  border: 1px solid var(--mainBorderColor);
+  padding: 0.5em 1em;
+  border-radius: 5px;
+}
+
+.card--experience {
+  border-left: 1px solid var(--mainBorderColor);
+  margin-top: 3em;
+  margin-bottom: 3em;
+  padding-left: 2em;
+}
+
+.line--break {
+  background-color: var(--mainBorderColor);
+  height: 1px;
+}
+
+.card--projects {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-top: 1px solid var(--mainBorderColor);
+}
+
+#accomplishments--list {
+  padding-top: 1em;
+  padding-bottom: 2em;
+  display: inline-block;
+  text-decoration: none;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: white;
+}
+
+#accomplishments--list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding-left: 15%;
+  padding-top: 1em;
+  padding-bottom: 2em;
+  column-gap: normal;
+  flex-wrap: wrap;
+}
+
+#accomplishments--list a {
+  border: 1px solid var(--mainBorderColor);
+  margin-top: 5%;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  border-top: 3%;
+  border-bottom: 3%;
+  justify-content: space-between;
+  font-size: 0.9em;
+  color: var(--mainTextColor);
+}
+
+#accomplishments--list a:hover {
+  color: blue;
+  transition: 0.4s;
+}
